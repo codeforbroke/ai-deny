@@ -1,0 +1,124 @@
+.ai-deny-header-wrapper {
+  background: white;
+  margin-left: -20px;
+  width: calc(100% + 20px);
+  overflow-x: hidden;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.ai-deny-header {
+ padding: 1.5rem; 
+}
+
+.ai-deny-wrapper {
+  padding: 64px;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.ai-deny-box {
+  background: #fff;
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border-radius: 0.5rem;
+  padding: 2.5rem;
+}
+
+.ai-deny-box h2 {
+  font-size: 24px
+}
+
+.ai-deny-box p {
+  font-size: 16px;
+}
+
+.ai-deny-box p:first-child {
+  margin-top: 0;
+}
+
+.ai-deny-box p:last-child {
+  margin-bottom: 0;
+}
+
+.ai-deny-items {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.ai-deny-items > * + * {
+  border-top-width: 1px;
+  border-bottom-width: 0px;
+  border-top-color: #d1d5db;
+  border-top-style: solid;
+}
+
+.ai-deny-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.ai-deny-item-info {
+  flex: 1;
+}
+
+.ai-deny-item-info h3 {
+  margin: 0 0 8px 0;
+}
+
+.ai-deny-item-info p {
+  margin: 0;
+}
+
+.ai-deny-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-left: 48px;
+}
+
+.ai-deny-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.ai-deny-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.ai-deny-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .ai-deny-slider {
+  background-color: #2196F3;
+}
+
+input:focus + .ai-deny-slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .ai-deny-slider:before {
+  transform: translateX(26px);
+}

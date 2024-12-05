@@ -256,11 +256,6 @@ class AIDeny {
     </div>
 
     <div class="ai-deny-wrapper">
-
-      <div class="ai-deny-box">
-        <p>Blocking AI crawlers from your website can protect both performance and privacy. Allowing bots to index your site can lead to increased server load, slowing down your site’s performance for actual users. Additionally, AI crawlers may gather data beyond your intended audience, raising potential privacy concerns if sensitive information is accessible.</p>
-      </div>
-      
       <div class="ai-deny-box">
         <h2>Toggle Bots</h2>
         <p>By toggling each agent individually, you can fine-tune which bots are allowed or restricted from accessing your site, keeping it optimized and private for real users.</p>

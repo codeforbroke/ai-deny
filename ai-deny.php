@@ -108,6 +108,21 @@ class AIDeny {
         'user_agent' => 'Google-Extended',
         'description' => 'Google-Extended is a product token enabling web publishers to decide if their sites support improving Gemini Apps and Vertex AI generative APIs. Sites blocking Google-Extended are excluded from Vertex AI grounding but remain unaffected in Google Search inclusion or ranking.'
       ],
+      'googleother' => [
+        'name' => 'GoogleOther',
+        'user_agent' => 'GoogleOther',
+        'description' => 'The GoogleOther bot is a web crawler used by Google for various tasks beyond search indexing, such as research and development.'
+      ],
+      'googleotherimage' => [
+        'name' => 'GoogleOther-Image',
+        'user_agent' => 'GoogleOther-Image',
+        'description' => 'The GoogleOther-Image bot is a web crawler used by Google to index and analyze images for improving image-related search services.'
+      ],
+      'googleothervideo' => [
+        'name' => 'GoogleOther-Video',
+        'user_agent' => 'GoogleOther-Video',
+        'description' => 'The GoogleOther-Video bot is a specialized web crawler used by Google to index and process video content for enhanced search and discovery.'
+      ],
       'gptbot' => [
         'name' => 'GPTBot',
         'user_agent' => 'GPTBot',

@@ -1,8 +1,8 @@
 <?php
 /**
  * Plugin Name:   AI Deny
- * Plugin URI:    https://codeforbroke.com/ai-deny/
- * Description:   Block AI crawlers from consuming your content and server resources
+ * Plugin URI:    https://github.com/codeforbroke/ai-deny
+ * Description:   Easily block over 30 of the most common AI user-agents known for crawling websites, keeping unauthorized bots at bay.
  * Author:        Code For Broke, Inc.
  * Author URI:    https://codeforbroke.com/
  * Text Domain:   ai-deny

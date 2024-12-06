@@ -1,6 +1,6 @@
 === AI Deny ===
 Contributors: codeforbroke
-Tags: robots.txt, robots, ai, bots, useragent, user agent, user-agent
+Tags: robots.txt, robots, ai, bots, crawler
 Requires at least: 6.0
 Tested up to: 6.7.1
 Stable tag: 0.1.0

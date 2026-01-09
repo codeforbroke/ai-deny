@@ -301,11 +301,7 @@ class AIDeny {
     wp_send_json_success();
   }
 
-  public function modify_robots_txt($output, $public) {
-    if ('0' === $public) {
-      return $output;
-    }
-
+  public function modify_robots_txt($output) {
     $settings = get_option($this->option_name, []);
     $rules = [];
 

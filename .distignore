@@ -1,0 +1,27 @@
+# Development and build files
+.git
+.gitignore
+.gitattributes
+.wp-env.json
+.distignore
+
+# Documentation
+README.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode
+.idea
+*.sublime-project
+*.sublime-workspace
+
+# Node
+node_modules
+package-lock.json
+package.json
+
+# Logs
+*.log

@@ -8,14 +8,14 @@
  * Text Domain:   ai-deny
  * License:       GPL v2 or later
  * License URI:   https://www.gnu.org/licenses/gpl-2.0.html
- * Version:       0.1.0
+ * Version:       0.1.1
  *
  * @package     AI_Deny
  */
 
 if (!defined('ABSPATH')) exit;
 
-define( 'AI_DENY_VERSION', '0.1.0' );
+define( 'AI_DENY_VERSION', '0.1.1' );
 
 class AIDeny {
   private $option_name = 'ai_deny_settings';

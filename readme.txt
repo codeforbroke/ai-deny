@@ -3,7 +3,7 @@ Contributors: codeforbroke
 Tags: robots.txt, robots, ai, bots, crawler
 Requires at least: 6.0
 Tested up to: 6.9
-Stable tag: 0.1.0
+Stable tag: 0.1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -26,6 +26,13 @@ Upload AI Deny to your blog and activate it.
 Toggle User-Agents in Settings > AI Deny
 
 == Changelog ==
+
+= 0.1.1 =
+*January 9 2025*
+
+* Fix: Translation loading triggered too early
+* Fix: Display AI Deny rules even when "Discourage search engines" is enabled
+* Enhancement: Add development environment support
 
 = 0.1.0 =
 *December 4 2024*

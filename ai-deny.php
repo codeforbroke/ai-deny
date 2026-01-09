@@ -317,4 +317,6 @@ class AIDeny {
   }
 }
 
-new AIDeny();
+add_action('init', function() {
+  new AIDeny();
+});

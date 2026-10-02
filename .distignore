@@ -1,7 +1,9 @@
 # Development and build files
 .git
+.github
 .gitignore
 .gitattributes
+.wordpress-org
 .wp-env.json
 .distignore
 

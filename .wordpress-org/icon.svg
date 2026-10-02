@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect width="256" height="256" fill="#25213c"/>
+  <defs><radialGradient id="g" cx="50%" cy="45%" r="60%"><stop offset="0" stop-color="#3854e8" stop-opacity=".35"/><stop offset="1" stop-color="#3854e8" stop-opacity="0"/></radialGradient></defs>
+  <rect width="256" height="256" fill="url(#g)"/>
+  <!-- robot head -->
+  <line x1="128" y1="58" x2="128" y2="80" stroke="#f7f5ee" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="128" cy="52" r="10" fill="#8294ff"/>
+  <rect x="62" y="80" width="132" height="104" rx="28" fill="#f7f5ee"/>
+  <rect x="48" y="114" width="14" height="36" rx="7" fill="#f7f5ee"/>
+  <rect x="194" y="114" width="14" height="36" rx="7" fill="#f7f5ee"/>
+  <circle cx="102" cy="124" r="13" fill="#3854e8"/>
+  <circle cx="154" cy="124" r="13" fill="#3854e8"/>
+  <rect x="100" y="152" width="56" height="10" rx="5" fill="#3854e8"/>
+  <!-- no symbol -->
+  <circle cx="128" cy="130" r="98" fill="none" stroke="#ee299b" stroke-width="18"/>
+  <line x1="58.7" y1="199.3" x2="197.3" y2="60.7" stroke="#ee299b" stroke-width="18" stroke-linecap="round"/>
+</svg>

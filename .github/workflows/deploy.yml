@@ -1,0 +1,27 @@
+name: Deploy to WordPress.org
+
+on:
+  push:
+    tags:
+      # Version tags only (0.1.2 or v0.1.2). The tag name, minus any leading
+      # "v", becomes the SVN tag, so it must match the plugin header Version.
+      - 'v?[0-9]+.[0-9]+.[0-9]+'
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy tag to WordPress.org
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: WordPress plugin deploy
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: ai-deny

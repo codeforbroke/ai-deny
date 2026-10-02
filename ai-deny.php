@@ -8,14 +8,14 @@
  * Text Domain:   ai-deny
  * License:       GPL v2 or later
  * License URI:   https://www.gnu.org/licenses/gpl-2.0.html
- * Version:       0.1.1
+ * Version:       0.1.2
  *
  * @package     AI_Deny
  */
 
 if (!defined('ABSPATH')) exit;
 
-define( 'AI_DENY_VERSION', '0.1.1' );
+define( 'AI_DENY_VERSION', '0.1.2' );
 
 class AIDeny {
   private $option_name = 'ai_deny_settings';
@@ -23,7 +23,6 @@ class AIDeny {
 
   public function __construct() {
     $this->init_ai_bots();
-    register_activation_hook(__FILE__, [$this, 'activate_plugin']);
     add_action('admin_menu', [$this, 'add_menu_page']);
     add_action('admin_enqueue_scripts', [$this, 'enqueue_assets']);
     add_filter('robots_txt', [$this, 'modify_robots_txt'], 10, 2);
@@ -198,19 +197,12 @@ class AIDeny {
     ];
   }
 
-  public function activate_plugin() {
+  public static function activate_plugin() {
 
     if ( isset($_SERVER['DOCUMENT_ROOT']) && file_exists( esc_url_raw(wp_unslash($_SERVER['DOCUMENT_ROOT'])) . '/robots.txt' ) ) {
 
       wp_die( esc_html(__('A static robots.txt file exists on your server. Remove the robots.txt file and try activating AI Deny again.', 'ai-deny')));
 
-    }
-
-    $existing_settings = get_option($this->option_name, false);
-    
-    if ($existing_settings === false) {
-      $default_settings = array_fill_keys(array_keys($this->ai_bots), true);
-      update_option($this->option_name, $default_settings);
     }
   }
 
@@ -320,3 +312,7 @@ class AIDeny {
 add_action('init', function() {
   new AIDeny();
 });
+
+// Register on load, not inside `init`: WordPress fires the activation hook
+// after `init` has already run, so a hook registered there never fires.
+register_activation_hook(__FILE__, ['AIDeny', 'activate_plugin']);
